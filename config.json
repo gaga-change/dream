@@ -1,5 +1,3 @@
 {
-  "root_path": "./",
-  "parse_path": "",
-  "port": "8183"
+  "port": "8080"
 }

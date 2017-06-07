@@ -1,0 +1,47 @@
+.frame-head {
+  & > div {
+    border-bottom: 1px solid $gray-lighter;
+  }
+  h1, a {
+    line-height: 110px;
+  }
+  /*博客名*/
+  h1.title {
+    cursor: pointer;
+    @include transition(all, .3s);
+    a:hover small {
+      color: $link-hover-color;
+    }
+    small {
+      @include transition(all, .3s);
+    }
+  }
+  /*导航*/
+  @at-root .frame-nav {
+    ul {
+      text-align: right;
+      font-size: $font-size-large;
+    }
+  }
+  /*菜单缩略按钮*/
+  @at-root .menu-icon {
+    display: block;
+    float: right;
+    width: 18px;
+    height: 15px;
+    text-align: center;
+    padding-top: 3px;
+    svg {
+      width: 18px;
+      height: 15px;
+    }
+  }
+}
+
+.frame-content {
+
+}
+
+.frame-footer {
+
+}

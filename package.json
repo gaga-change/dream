@@ -10,7 +10,9 @@
   },
   "description": "XXX的博客静态页面",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

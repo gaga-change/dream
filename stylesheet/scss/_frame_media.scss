@@ -8,18 +8,19 @@
     @at-root .frame-nav {
       /*菜单字体 16px -> 14px*/
       ul {
-        font-size: $font-size-base ;
+        font-size: $font-size-base;
       }
     }
     /*标题字体变小 h1 -> h2*/
     h1 {
       font-size: $font-size-h2;
     }
-    h1,a {
+    h1, a {
       line-height: 95px;
     }
   }
 }
+
 /*小屏幕   x<=991px x<992px*/
 @media (max-width: $screen-sm-max) {
   /*头部*/
@@ -29,13 +30,17 @@
       font-size: $font-size-h3;
     }
     /*行高变小*/
-    h1,a {
+    h1, a {
       line-height: 80px;
     }
   }
 }
+
 /*手机屏 x<=767px x<768px*/
 @media (max-width: $screen-xs-max) {
+  .hide-xs {
+    display: none;
+  }
   /*头部*/
   .frame-head {
     /*标题字体变小 h3 -> h4*/
@@ -43,8 +48,20 @@
       font-size: $font-size-h4;
     }
     /*行高变小*/
-    h1,a {
+    h1, a {
       line-height: 60px;
+    }
+    @at-root .frame-nav > ul {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 60px;
+      background-color: $state-info-bg;
+      li {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }

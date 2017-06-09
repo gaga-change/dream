@@ -1828,6 +1828,7 @@ select[multiple].input-lg {
 
 /*Private CSS*/
 .frame-head {
+  position: relative;
   /*博客名*/
   /*导航*/
   /*菜单缩略按钮*/ }
@@ -1890,6 +1891,8 @@ select[multiple].input-lg {
 
 /*手机屏 x<=767px x<768px*/
 @media (max-width: 767px) {
+  .hide-xs {
+    display: none; }
   /*头部*/
   .frame-head {
     /*标题字体变小 h3 -> h4*/
@@ -1897,7 +1900,17 @@ select[multiple].input-lg {
     .frame-head h1 {
       font-size: 18px; }
     .frame-head h1, .frame-head a {
-      line-height: 60px; } }
+      line-height: 60px; }
+    .frame-nav > ul {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 60px;
+      background-color: #d9edf7; }
+      .frame-nav > ul li {
+        display: block;
+        width: 100%;
+        text-align: center; } }
 
 #__bs_notify__ {
   opacity: .1; }

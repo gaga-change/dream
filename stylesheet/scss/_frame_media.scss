@@ -1,6 +1,17 @@
 /**
 * 默认样式为大屏幕   x>=1200px
 */
+/*小、中、大（非手机屏）*/
+@media (min-width: $screen-sm-min) {
+  .frame-head {
+    @at-root .frame-nav {
+      /*菜单必显*/
+      ul {
+        display: block!important;
+      }
+    }
+  }
+}
 /*中屏幕  x<=1199px x<1200px*/
 @media (max-width: $screen-md-max) {
   /*头部*/
@@ -55,7 +66,6 @@
       position: absolute;
       width: 100%;
       left: 0;
-      top: 60px;
       background-color: $state-info-bg;
       li {
         display: block;

@@ -1,151 +1,153 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>插叉察个人博客--没有设计能力，但有一颗绚丽的心。</title>
-    <link rel="stylesheet" href="/stylesheet/css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>插叉察个人博客--没有设计能力，但有一颗绚丽的心。</title>
+  <link rel="stylesheet" href="/stylesheet/css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div class="i-page">
-    <!--头部导航-->
-    <header class="frame-head">
-        <div class="container">
-            <div class="row ">
-                <div class="col-sm-4 col-xs-10">
-                    <h1 class="title">
-                        <a href="/">
-                            插叉察
-                            <small>的差哈</small>
-                        </a>
-                    </h1>
-                </div>
-                <div class="col-sm-8 col-xs-2 ">
-                    <a href="#" class="visible-xs-block menu-icon" id="menu-link">
-                        <svg viewBox="0 0 18 15">
-                            <path fill="#51b9db" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
-                            <path fill="#51b9db" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
-                            <path fill="#51b9db" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
-                        </svg>
-                    </a>
-                    <nav class="frame-nav">
-                        <ul id="menu" class="list-inline hide-xs">
-                            <li><a href="/">主页</a></li>
-                            <li><a href="/page/pages.html">优秀页面</a></li>
-                            <li><a href="/page/message.html">留言</a></li>
-                            <li><a href="#">关于</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+  <!--头部导航-->
+  <header class="frame-head">
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-4 col-xs-12">
+          <div class="row">
+            <h1 class="title col-xs-8">
+              <a href="/">
+                插叉察
+                <small>的差哈</small>
+              </a>
+            </h1>
+            <a href="#" class="visible-xs-block menu-icon col-xs-2" id="menu-link">
+              <svg viewBox="0 0 18 15">
+                <path fill="#51b9db" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+                <path fill="#51b9db" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+                <path fill="#51b9db" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+              </svg>
+            </a>
+          </div>
         </div>
-    </header>
-    <!--内容-->
-    <section class="frame-content hide">
-        <div class="container">
-            <div class="row bg-warning">
-                <!--列表-->
-                <div class="col-md-8">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">
-                                <h1>标题</h1>
-                                <img src="http://images.yanjundong.top/%E6%9D%BE%E9%BC%A0%E5%A4%B4%E5%83%8F.jpg"
-                                     width="187" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h1>标题</h1>
-                                <img src="http://images.yanjundong.top/%E6%9D%BE%E9%BC%A0%E5%A4%B4%E5%83%8F.jpg"
-                                     width="187" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h1>标题</h1>
-                                <img src="http://images.yanjundong.top/%E6%9D%BE%E9%BC%A0%E5%A4%B4%E5%83%8F.jpg"
-                                     width="187" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!--菜单-->
-                <div class="col-md-4">
-                    <div>
-                        <h3>搜索</h3>
-                        <input type="text" placeholder="根据标题检索">
-                        <button>搜索</button>
-                    </div>
-                    <!--排序方式-->
-                    <div>
-                        <h3>排序方式</h3>
-                        <select class="form-control" title>
-                            <option>时间先后↑</option>
-                            <option>时间先后↓</option>
-                            <option>点击量↑</option>
-                            <option>点击量↓</option>
-                            <option>评论量↑</option>
-                            <option>评论量↓</option>
-                        </select>
-                    </div>
-                    <div>
-                        <h3>标签筛选</h3>
-                        <div>
-                            <ul>
-                                <li>html</li>
-                                <li>js</li>
-                                <li>css</li>
-                                <li>node.js</li>
-                            </ul>
-                        </div>
-                        <button>重置</button>
-                    </div>
-                    <div>
-                        <h3>扫描二维码添加 好友</h3>
-                        <div>
-                            <img
-                                src="http://images.yanjundong.top/mmqrcode1496663645766.png?imageView2/1/w/185/h/185/format/jpg/q/86"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--底部声明-->
-    <footer class="frame-footer hide">
-        <div class="container bg-info">
-            <ul class="list-unstyled">
-                <li>
-                    <h3>友情链接</h3>
-                    <ul>
-                        <li><a href="#">Bootstrap中文网</a></li>
-                        <li><a href="#">Bootstrap中文网</a></li>
-                        <li><a href="#">Bootstrap中文网</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>使用到的技术</h3>
-                    <ul class="list-unstyled">
-                        <li>vue</li>
-                        <li>gulp</li>
-                        <li>webpack</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>本站代码</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">静态页面地址</a></li>
-                        <li><a href="#">全套代码地址</a></li>
-                    </ul>
-                </li>
+        <div class="col-sm-8 col-xs-12 ">
+          <nav class="frame-nav">
+            <ul id="menu" class=" hide-xs">
+              <li><a href="/">主页</a></li>
+              <li><a href="/page/pages.html">优秀页面</a></li>
+              <li><a href="/page/message.html">留言</a></li>
+              <li><a href="#">关于</a></li>
             </ul>
-            <footer class="text-center">
-                备案号
-            </footer>
+          </nav>
         </div>
-    </footer>
+      </div>
+    </div>
+  </header>
+  <!--内容-->
+  <section class="frame-content hide">
+    <div class="container">
+      <div class="row bg-warning">
+        <!--列表-->
+        <div class="col-md-8">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">
+                <h1>标题</h1>
+                <img src="http://images.yanjundong.top/%E6%9D%BE%E9%BC%A0%E5%A4%B4%E5%83%8F.jpg"
+                     width="187" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h1>标题</h1>
+                <img src="http://images.yanjundong.top/%E6%9D%BE%E9%BC%A0%E5%A4%B4%E5%83%8F.jpg"
+                     width="187" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h1>标题</h1>
+                <img src="http://images.yanjundong.top/%E6%9D%BE%E9%BC%A0%E5%A4%B4%E5%83%8F.jpg"
+                     width="187" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--菜单-->
+        <div class="col-md-4">
+          <div>
+            <h3>搜索</h3>
+            <input type="text" placeholder="根据标题检索">
+            <button>搜索</button>
+          </div>
+          <!--排序方式-->
+          <div>
+            <h3>排序方式</h3>
+            <select class="form-control" title>
+              <option>时间先后↑</option>
+              <option>时间先后↓</option>
+              <option>点击量↑</option>
+              <option>点击量↓</option>
+              <option>评论量↑</option>
+              <option>评论量↓</option>
+            </select>
+          </div>
+          <div>
+            <h3>标签筛选</h3>
+            <div>
+              <ul>
+                <li>html</li>
+                <li>js</li>
+                <li>css</li>
+                <li>node.js</li>
+              </ul>
+            </div>
+            <button>重置</button>
+          </div>
+          <div>
+            <h3>扫描二维码添加 好友</h3>
+            <div>
+              <img
+                src="http://images.yanjundong.top/mmqrcode1496663645766.png?imageView2/1/w/185/h/185/format/jpg/q/86"
+                alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--底部声明-->
+  <footer class="frame-footer hide">
+    <div class="container bg-info">
+      <ul class="list-unstyled">
+        <li>
+          <h3>友情链接</h3>
+          <ul>
+            <li><a href="#">Bootstrap中文网</a></li>
+            <li><a href="#">Bootstrap中文网</a></li>
+            <li><a href="#">Bootstrap中文网</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>使用到的技术</h3>
+          <ul class="list-unstyled">
+            <li>vue</li>
+            <li>gulp</li>
+            <li>webpack</li>
+          </ul>
+        </li>
+        <li>
+          <h3>本站代码</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">静态页面地址</a></li>
+            <li><a href="#">全套代码地址</a></li>
+          </ul>
+        </li>
+      </ul>
+      <footer class="text-center">
+        备案号
+      </footer>
+    </div>
+  </footer>
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>

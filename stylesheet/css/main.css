@@ -1848,22 +1848,34 @@ select[multiple].input-lg {
       -o-transition: all, 0.3s;
       transition: all, 0.3s; }
   .frame-nav ul {
+    padding: 0;
+    list-style: none;
     text-align: right;
     font-size: 18px; }
-  .menu-icon {
+    .frame-nav ul > li {
+      display: inline-block;
+      padding-left: 7px;
+      padding-right: 7px; }
+  a.menu-icon {
     display: block;
     float: right;
-    width: 18px;
     height: 15px;
     text-align: center;
     padding-top: 3px; }
-    .menu-icon svg {
+    a.menu-icon svg {
       width: 18px;
       height: 15px; }
 
 /**
 * 默认样式为大屏幕   x>=1200px
 */
+/*小、中、大（非手机屏）*/
+@media (min-width: 768px) {
+  .frame-nav {
+    /*菜单必显*/ }
+    .frame-nav ul {
+      display: block !important; } }
+
 /*中屏幕  x<=1199px x<1200px*/
 @media (max-width: 1199px) {
   /*头部*/
@@ -1905,7 +1917,6 @@ select[multiple].input-lg {
       position: absolute;
       width: 100%;
       left: 0;
-      top: 60px;
       background-color: #d9edf7; }
       .frame-nav > ul li {
         display: block;

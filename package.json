@@ -6,7 +6,8 @@
     "gulp": "^3.9.1",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
   },
   "description": "XXX的博客静态页面",
   "main": "gulpfile.js",

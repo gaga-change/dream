@@ -7,11 +7,12 @@
     @at-root .frame-nav {
       /*菜单必显*/
       ul {
-        display: block!important;
+        display: block !important;
       }
     }
   }
 }
+
 /*中屏幕  x<=1199px x<1200px*/
 @media (max-width: $screen-md-max) {
   /*头部*/
@@ -29,6 +30,9 @@
     h1, a {
       line-height: 95px;
     }
+    & > .bubble {
+      height: 95px;
+    }
   }
 }
 
@@ -44,14 +48,14 @@
     h1, a {
       line-height: 80px;
     }
+    & > .bubble {
+      height: 80px;
+    }
   }
 }
 
 /*手机屏 x<=767px x<768px*/
 @media (max-width: $screen-xs-max) {
-  .hide-xs {
-    display: none;
-  }
   /*头部*/
   .frame-head {
     /*标题字体变小 h3 -> h4*/
@@ -62,10 +66,20 @@
     h1, a {
       line-height: 60px;
     }
+    & > .bubble {
+      height: 60px;
+    }
+    .frame-nav {
+      margin: 0 -15px;
+    }
     @at-root .frame-nav > ul {
-      position: absolute;
-      width: 100%;
-      left: 0;
+      //position: relative;
+      //left: -100%;
+      position: fixed;
+      top: 0;
+      width: 80%;
+      right: 100%;
+      bottom: 0;
       background-color: $state-info-bg;
       li {
         display: block;

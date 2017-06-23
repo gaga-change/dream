@@ -1,0 +1,6 @@
+/*手机屏 x<=767px x<768px*/
+@media (max-width: $screen-xs-max) {
+  .hide-xs {
+    display: none;
+  }
+}

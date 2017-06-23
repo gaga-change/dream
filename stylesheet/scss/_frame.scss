@@ -1,2 +1,27 @@
 @import "struct/head";
 @import "struct/head_media";
+@import "struct/common";
+@import "struct/common_media";
+
+/*手机屏 x<=767px x<768px*/
+@media (max-width: $screen-xs-max) {
+  .i-page {
+    position: relative;
+    width: 100%;
+  }
+}
+/*内容幕布*/
+#app-shade.active{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: rgba(85, 85, 85, 0.6);
+  z-index: 10;
+}
+
+body{
+  & > div {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,35 @@
+/*手机屏 x<=767px x<768px*/
+@media (max-width: $screen-xs-max) {
+  /*主页博客列表*/
+  ul.post-list {
+    h2 {
+      font-size: 1.5em;
+    }
+    li {
+      padding: 35px 0;
+      /*标题*/
+      & > h2 {
+        margin-bottom: 18px;
+      }
+    }
+    /*博客媒体信息*/
+    .post-meta {
+
+    }
+    /*作者和时间*/
+    @at-root span.post-meta {
+      display: block;
+      text-align: center;
+    }
+    /*归档和标签*/
+    @at-root div.post-meta {
+
+    }
+    /*描述*/
+    @at-root div.post-excerpt {
+    }
+    /*进入详情*/
+    div.read-more {
+    }
+  }
+}

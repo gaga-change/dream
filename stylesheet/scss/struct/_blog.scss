@@ -1,0 +1,40 @@
+/*主页博客列表*/
+ul.post-list {
+  padding-left: 0;
+  list-style: none;
+  h2 {
+    font-size: 1.8em;
+  }
+  li {
+    display: block;
+    max-width: 650px;
+    padding: 85px 0;
+    border-bottom: 1px solid $gray-lighter;
+    margin: auto;
+    /*标题*/
+    & > h2 {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+  }
+  /*博客媒体信息*/
+  .post-meta {
+
+  }
+  /*作者和时间*/
+  @at-root span.post-meta {
+    text-align: left;
+  }
+  /*归档和标签*/
+  @at-root div.post-meta {
+
+  }
+  /*描述*/
+  @at-root div.post-excerpt {
+    margin: 20px auto;
+  }
+  /*进入详情*/
+  div.read-more {
+    padding-top: 10px;
+  }
+}

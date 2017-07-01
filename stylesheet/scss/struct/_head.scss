@@ -1,30 +1,42 @@
 .frame-head {
   position: relative;
+  /*头部主体*/
   & > .con {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(218, 238, 236, 0.9);
-  }
-  & > .bubble {
-    height: 110px;
-  }
-  & > div {
+    background: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid $gray-lighter;
+    &.shrink {
+      h1, a {
+        line-height: 50px;
+      }
+    }
+  }
+  /*填白*/
+  & > .bubble {
+    height: 95px;
+  }
+  h1 {
+    font-size: $font-size-h2;
   }
   h1, a {
-    line-height: 110px;
+    line-height: 95px;
+    @include transition(all, ease-in-out, .7s)
   }
   /*博客名*/
   h1.title {
     cursor: pointer;
-    @include transition(all, .3s);
+    font-weight: 700;
+    //@include transition(all, .3s);
+    text-shadow: -2px 2px 2px rgba(183, 183, 183, 0.42);
     a:hover small {
       color: $link-hover-color;
     }
     small {
-      @include transition(all, .3s);
+      text-shadow: none;
+      //@include transition(all, .3s);
     }
   }
   /*导航*/

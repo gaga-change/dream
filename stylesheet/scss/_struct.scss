@@ -1,7 +1,13 @@
+/*导航栏样式*/
 @import "struct/head";
 @import "struct/head_media";
+/*通用样式*/
 @import "struct/common";
 @import "struct/common_media";
+/*博客列表样式*/
 @import "struct/blog";
 @import "struct/blog_media";
+/*底部样式*/
+@import "struct/footer";
+/*主页面结构*/
 @import "struct/frame";

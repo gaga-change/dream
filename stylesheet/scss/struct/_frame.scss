@@ -8,7 +8,7 @@
 /*内容幕布*/
 #app-shade {
   background: rgba(255, 255, 255, 0);
-  @include transition(all, 3s);
+  //@include transition(all, 3s);
 }
 #app-shade.active{
   position: absolute;
